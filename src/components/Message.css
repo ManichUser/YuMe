@@ -1,0 +1,67 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin-bottom: 8px;
+  animation: messageSlide 0.3s ease;
+}
+
+@keyframes messageSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mes messages → DROITE */
+.message.mine {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+/* Messages reçus → GAUCHE */
+.message.theirs {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.sender-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  padding: 0 4px;
+}
+
+.message.mine .sender-name {
+  color: #a5b4fc; /* Couleur claire pour fond bleu */
+}
+
+.message.theirs .sender-name {
+  color: #555;
+}
+
+.message-content {
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Bulle bleue pour mes messages */
+.message.mine .message-content {
+  background-color: #4338ca;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+/* Bulle grise pour messages reçus */
+.message.theirs .message-content {
+  background-color: #e5e5ea;
+  color: black;
+  border-bottom-left-radius: 4px;
+}

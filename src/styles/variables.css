@@ -1,0 +1,61 @@
+:root {
+    /* Couleurs principales */
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #2a2a2a;
+    
+    /* Couleurs de surface */
+    --surface-light: #ffffff;
+    --surface-dark: #252525;
+    
+    /* Couleurs des bulles */
+    --bubble-sent: #0084ff;
+    --bubble-received: #3a3a3a;
+    
+    /* Texte */
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-on-primary: #ffffff;
+    
+    /* Accents */
+    --accent: #0084ff;
+    --accent-hover: #006edb;
+    --border: #3a3a3a;
+    --error: #ff4444;
+    
+    /* Espacements */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Rayons */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-full: 24px;
+    
+    /* Ombres */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+    
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+  }
+  
+  /* Mode clair (optionnel pour plus tard) */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg-primary: #f5f5f5;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #e8e8e8;
+      --surface-dark: #ffffff;
+      --bubble-received: #e8e8e8;
+      --text-primary: #0f0f0f;
+      --text-secondary: #666666;
+      --border: #e0e0e0;
+    }
+  }

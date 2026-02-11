@@ -1,0 +1,104 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f46e5;
+  color: white;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: 10px;
+  background: var(--bg-primary);
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.message.mine {
+  background-color: #4338ca;
+  color: white;
+  align-self: flex-end;
+}
+
+.message.theirs {
+  background-color: #e5e5ea;
+  color: black;
+  align-self: flex-start;
+}
+
+.sender-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #555;
+}
+
+/* INPUT WHATSAPP STYLE */
+.chat-input-wrapper {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.emoji-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.send-btn {
+  background-color: #4f46e5;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.emoji-picker-container {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  z-index: 1000;
+}
